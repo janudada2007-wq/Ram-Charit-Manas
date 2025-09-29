@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>राम चरित मानस – Spiritual Companion</title>
+  <link rel="stylesheet" href="ramayana.css" />
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <h1>राम चरित मानस</h1>
+      <span>Spiritual Companion</span>
+    </div>
+    <nav>
+      <button class="tab-btn active" data-tab="home"><i class="icon">🏠</i> Home</button>
+      <button class="tab-btn" data-tab="reading"><i class="icon">📖</i> Reading</button>
+      <button class="tab-btn" data-tab="naam-jap"><i class="icon">🧮</i> Naam Jap</button>
+    </nav>
+  </header>
+
+  <!-- Tab Contents -->
+  <main>
+    <!-- Home -->
+    <section id="home" class="tab-content active">
+      <div class="greeting">
+        <h2>नमस्ते abhi! 🙏</h2>
+        <p>Your spiritual journey continues with Ram Charit Manas</p>
+      </div>
+      <div class="cards">
+        <div class="card yellow">
+          <div class="card-header">
+            <span>Total Japs</span>
+            <span class="icon">🧮</span>
+          </div>
+          <div class="count">50</div>
+          <p>1 Malas completed</p>
+        </div>
+        <div class="card pink">
+          <div class="card-header">
+            <span>Quiz Score</span>
+            <span class="icon">🧠</span>
+          </div>
+          <div class="count">8</div>
+          <p>Across all Kands</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reading -->
+    <section id="reading" class="tab-content">
+      <h2>राम चरित मानस पठन</h2>
+      <p class="subtitle">Divine verses from Goswami Tulsidas</p>
+
+      <div class="card yellow">
+        <label for="kandSelect"><i class="icon">📘</i> Select Kand:</label>
+        <select id="kandSelect">
+          <option>Bal Kand</option>
+          <option>Ayodhya Kand</option>
+          <option>Aranya Kand</option>
+        </select>
+      </div>
+
+      <div class="verse-card">
+        <div class="verse-header">
+          <span class="kand-name">❤️ Bal Kand</span>
+          <span class="verse-num">Verse 1</span>
+        </div>
+        <div class="verse-text">श्रीगुरु चरन सरोज रज निज मन मुकुर सुधारि।</div>
+        <div class="meaning">
+          <strong>अर्थ (Meaning):</strong><br />
+          श्री गुरु के चरण कमलों की धूलि से अपने मन रूपी दर्पण को साफ करके।
+        </div>
+        <div class="verse-nav">
+          <button class="prev-btn">← Previous</button>
+          <span>1 of 2</span>
+          <button class="next-btn">Next →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Naam Jap -->
+    <section id="naam-jap" class="tab-content">
+      <div class="card green">
+        <div class="card-header">
+          <span>Naam Jap</span>
+          <div class="icon-badge">
+            <span class="icon large">🧮</span>
+            <span class="badge">13</span>
+          </div>
+        </div>
+        <p>Continue your meditation practice with digital mala counter</p>
+        <div class="counter-display" id="counter">0</div>
+        <div class="counter-controls">
+          <button id="incrementBtn">+1 Jap</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Edit App Button -->
+  <button class="edit-btn">✏️ Edit App</button>
+  <script src="ramayana.js"></script>
+</body>
+</html>
